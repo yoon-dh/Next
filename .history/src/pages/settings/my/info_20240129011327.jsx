@@ -3,12 +3,6 @@ import SubLayout from 'components/SubLayout';
 import { useRouter } from 'next/router';
 import { useState } from 'react';
 
-export async function getServerSideProps() {
-    console.log('server');
-    return {
-        props: {},
-    };
-}
 export default function MyInfo() {
     const router = useRouter();
     const [clicked, setClicked] = useState(false);
@@ -25,27 +19,17 @@ export default function MyInfo() {
                     location.replace('/settings/my/info?status=editing');
                 }}
             >
-                edit replace
+                editreplace
             </button>
             <br />
             <button
                 onClick={() => {
                     alert('edit');
                     setClicked(true);
-                    router.push('/settings/my/info?status=editing');
+                    location.replace('/settings/my/info?status=editing');
                 }}
             >
-                edit push
-            </button>
-            <br />
-            <button
-                onClick={() => {
-                    alert('edit');
-                    setClicked(true);
-                    router.push('/settings/my/info?status=editing', undefined, { shallow: true });
-                }}
-            >
-                edit shallow
+                editreplace
             </button>
         </>
     );

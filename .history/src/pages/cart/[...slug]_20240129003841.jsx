@@ -1,20 +1,17 @@
 import Layout from 'components/Layout';
 import SubLayout from 'components/SubLayout';
 import { useRouter } from 'next/router';
-
-export default function CategorySlug() {
+export default function CartDateSlug() {
     const router = useRouter();
-    const { slug, from } = router.query;
+    const { date } = router.query;
     return (
         <>
-            <h1 className='title'>
-                Category {slug} from {from}
-            </h1>
+            <h1 className='title'>CartDateSlug</h1>
         </>
     );
 }
 
-CategorySlug.getLayout = function getLayout(page) {
+CartDateSlug.getLayout = function getLayout(page) {
     return (
         <Layout>
             <SubLayout>{page}</SubLayout>

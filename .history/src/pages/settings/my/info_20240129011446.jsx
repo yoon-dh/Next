@@ -37,16 +37,6 @@ export default function MyInfo() {
             >
                 edit push
             </button>
-            <br />
-            <button
-                onClick={() => {
-                    alert('edit');
-                    setClicked(true);
-                    router.push('/settings/my/info?status=editing', undefined, { shallow: true });
-                }}
-            >
-                edit shallow
-            </button>
         </>
     );
 }

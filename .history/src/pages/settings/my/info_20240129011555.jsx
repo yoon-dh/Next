@@ -42,7 +42,7 @@ export default function MyInfo() {
                 onClick={() => {
                     alert('edit');
                     setClicked(true);
-                    router.push('/settings/my/info?status=editing', undefined, { shallow: true });
+                    router.push('/settings/my/info?status=editing');
                 }}
             >
                 edit shallow
