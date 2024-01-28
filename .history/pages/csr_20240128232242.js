@@ -1,3 +1,4 @@
+
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
 import Layout from '../components/Layout';
@@ -16,10 +17,10 @@ export default function CSR() {
     );
 }
 
-CSR.getLayout = function getLayout(page) {
+CSR.getLayout = function getLayout(page) => {
     return (
         <Layout>
-            <SubLayout>{page}</SubLayout>
+            <SubLayout></SubLayout>
         </Layout>
-    );
-};
+    )
+}
