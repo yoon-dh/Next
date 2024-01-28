@@ -24,9 +24,6 @@ export default function Home({ time }) {
                 <h1>
                     <Link href='/ssg'>SSG 로</Link>
                 </h1>
-                <h1>
-                    <Link href='/isr'>ISR 로</Link>
-                </h1>
             </main>
 
             <footer>
